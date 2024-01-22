@@ -1,0 +1,60 @@
+.box-1{
+    width: 4rem;
+    height: 5rem;
+    background-color: red;
+  /*  animation-name: change;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s; */
+    /* how it can be arrange without listing  */
+    /* animation: changeShape 6s ease-in-out infinite; */
+
+}
+@keyframes change{
+    from{
+        background-color: red;
+    }
+
+    to{
+        background-color: blue;
+    }
+}
+
+@keyframes changeShape{
+    0%{
+        background-color: yellow;
+        width: 6rem;
+        height: 6rem;
+    }
+
+    50%{
+        background-color: teal;
+        width: 6rem;
+        height: 8rem;
+    }
+    100%{
+        background-color: green;
+        width: 6rem;
+        height: 6rem;
+        border-radius: 50%;
+    }
+}
+
+.box-2{
+    width: 6rem;
+    height: 5rem;
+    display: block;
+    margin: auto;
+    background-color: thistle;
+    animation:direction 4s ease-in infinite 2s;
+}
+
+@keyframes direction{
+    50%{
+        transform: translateY(-2rem);
+    }
+    100%{
+        transform: translateY();
+    }
+}

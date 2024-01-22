@@ -1,0 +1,27 @@
+
+._container{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+._box{
+    border:2px solid red;
+    border-radius: 10px;
+    background-color: aquamarine;
+
+}
+.btn1{
+    background-color: aqua;
+    border-radius: 15px;
+}
+._btns{
+    display: flex;
+    flex-direction: row;
+    gap: 24rem;
+    
+}
+.btn11{
+    background-color: yellow;
+    border-radius: 15px;
+}

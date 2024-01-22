@@ -1,0 +1,306 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+*{
+    box-sizing: border-box;
+}
+:root{
+    --p-col:rgb(251, 224, 71);
+    --s-col:rgb(29, 29, 29);
+    --t-col:white;
+}
+nav{
+    background-color: var(--s-col);
+    display: flex;
+}
+.mobileNav{
+    display: none;
+}
+.logo img{
+    width: 20%;
+    border-radius: 30%;
+}
+.menu{
+    margin-left: 5%;
+}
+.menu ul li{
+list-style-type: none;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: var(--p-col);
+    font-family: system-ui;
+    font-size: 1.3em;
+    padding-left: 20px;
+    line-height: 30px;
+}
+.menu ul li a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    transition: 300ms;
+}
+.menu ul{
+    display: flex;
+}
+.banner{
+    background-color: var(--s-col);
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.banner h1{
+    text-align: center;
+    color: var(--t-col);
+    font-size: 2.5em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+.banner span{
+    color: var(--p-col);
+}
+.banner p{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--t-col);
+    font-size: 1em;
+}
+.bannersection{
+    display: flex;
+    width: 90%;
+    margin-left: 5%;
+    align-items: end;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.bannersection figure{
+    border: solid white 2px;
+}
+.bannersection img{
+    width: 100%;
+}
+.bannerpara{
+    padding: 10px;
+    text-align: justify;
+}
+.bannersection>div{
+    width: 30%;
+    border: solid var(--p-col) 1px;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 20px;
+   
+    grid-gap: 20px;
+    animation-name: gallery;
+    animation-duration: 5s;
+}
+.gallery>div{
+    border: solid var(--p-col) 1px;
+}
+.gallery img{
+    height: 100%;
+}
+#one{
+   grid-row-start: 1; 
+   grid-row-end: 3; 
+
+}
+.bg{
+    background-image: url("https://media.istockphoto.com/id/1255928059/photo/young-caucasian-female-programmer-in-glasses-writes-program-code-on-a-laptop.webp?b=1&s=170667a&w=0&k=20&c=Iuu33Tqj2V3cZj4emGMUAvHk3ArF35tWIkxrvV9j0l4=");
+    width: 70%;
+    margin-left: 15%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    animation-name: bkg;
+    animation-duration: 10s;
+   animation-iteration-count: infinite;
+   animation-delay: 2s;
+}
+@keyframes bkg {
+    0%{background-image: url("https://media.istockphoto.com/id/1255928059/photo/young-caucasian-female-programmer-in-glasses-writes-program-code-on-a-laptop.webp?b=1&s=170667a&w=0&k=20&c=Iuu33Tqj2V3cZj4emGMUAvHk3ArF35tWIkxrvV9j0l4=");}
+
+    50%{background-image: url("https://media.istockphoto.com/id/1350900187/photo/it-teacher-writing-on-the-whiteboard-in-the-classroom.webp?b=1&s=170667a&w=0&k=20&c=IW0kINJNQ3pGEBUhO91adseJQTmQO_LGyk9nMV8zsro=");}
+
+    100%{background-image: url("https://media.istockphoto.com/id/1363276581/photo/smart-young-students-studying-in-university-with-diverse-multiethnic-classmates-scholars.webp?b=1&s=170667a&w=0&k=20&c=xEX-zFw0En_eTQ9EgQCBBdFr-vt-VfNr8wLz45RXf2w=");
+
+    }
+}
+@keyframes gallery {
+    0%{ margin-left: -2000px;}
+    20%{ margin-left: 5%;}
+   
+    60%{ margin-left: 10%;}
+ 
+    100%{ margin-left: 15%;}
+     
+}
+
+
+.btn{
+     margin-left: 28%;
+}
+.btn button{
+    padding:20px;
+    background: linear-gradient(120deg,var(--p-col),var(--s-col),var(--s-col));
+    color: var(--t-col);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.2em;
+    border: solid 1px var(--p-col);
+    border-radius: 10px;
+    margin-left: 10px;
+
+}
+.btn button:hover{
+    padding:21px;
+    background: linear-gradient(120deg,var(--s-col),var(--s-col),var(--p-col));
+    color: var(--t-col);
+    cursor: pointer;
+    transition: 500ms;
+
+}
+.section .icon{
+    margin-left: 45%;
+    margin-top: 50px;
+}
+.learn{
+    display: flex;
+    width: 90%;
+    margin-top: 50px;
+    margin-left: 5%;
+}
+.figure img{
+    width: 100%;
+}
+.learn .figure{
+    
+    order: 2;
+}
+.learn .article{
+    order: 1;
+}
+
+
+@media screen and (max-width: 780px){
+    nav{
+        background-color: var(--s-col);
+        display: none;
+    }
+    .mobileNav{
+        display: flex;
+        background-color:black;
+       padding-bottom: 40px;
+    }
+    .mobileNav .menu{
+       
+        margin-top: 20px;
+        margin-left: 200px;
+    }
+   .mobileNav .menu ul{
+        background-color: black;
+        display: none;
+        width: 95%;
+        margin-left:37px ;
+        border: var(--p-col) 1px solid;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 20px;
+        border-radius: 10px;
+        box-shadow: gray 1px 2px 3px;
+        
+    }
+    
+    .mobileNav .menu:hover.menu ul{
+        display: block;
+    }
+    .mobileNav figure img{
+        width: 30%;
+    }
+    .menu svg{
+        margin-left: 90px;
+    }
+    .btn{
+        margin-left:100px;
+   }
+   .btn button{
+       padding:10px;
+       background: linear-gradient(120deg,var(--p-col),var(--s-col),var(--s-col));
+       color: var(--t-col);
+       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+       font-size: 1.2em;
+       border: solid 1px var(--p-col);
+       border-radius: 10px;
+       margin-left: 10px;
+   
+   }
+   .gallery{
+    display: grid;
+    grid-template-columns: auto;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 20px;
+   
+    grid-gap: 20px;
+    animation-name: gallery;
+    animation-duration: 5s;
+}
+.bannersection{
+    display: flex;
+    flex-direction:column;
+    margin-left:-20px;
+     
+}
+.bannersection>div{
+    width: 80%;
+    border: solid var(--p-col) 1px;
+    margin-top: 20px;
+}
+}
+
+@media screen and (max-width: 450px){
+    nav{
+        background-color: var(--s-col);
+        display: none;
+       
+    }
+    .mobileNav{
+        display: flex;
+        background-color:black;
+       padding-bottom: 40px;
+    }
+    .mobileNav .menu{
+      
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+   .mobileNav .menu ul{
+        background-color: black;
+        display: none;
+        width: 95%;
+        margin-left:17px ;
+        border: var(--p-col) 1px solid;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 20px;
+        border-radius: 10px;
+        box-shadow: gray 1px 2px 3px;
+        
+    }
+    
+    .mobileNav .menu:hover.menu ul{
+        display: block;
+    }
+    .mobileNav figure img{
+        width: 30%;
+    }
+    .menu svg{
+        margin-left: -50px;
+    }
+     
+    
+}

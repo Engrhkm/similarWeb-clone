@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    color: black;
+    height: 4rem;
+    background: teal;
+}
+
+a{
+    color: black;
+}
+.ham{
+    display: none;
+}
+h1{
+    color: green;
+    font-size: 5rem;
+}
+
+/* desktop first */
+/* any screen size smaller than the specified screen size will have the efffct  */
+@media (max-width:768px){
+    a{
+        display: none;
+    }
+
+    .ham{
+        display: block;
+    }
+}
+
+/* mobile- first */
+/* any screen size larger than the specified screen size will have the efffct  */

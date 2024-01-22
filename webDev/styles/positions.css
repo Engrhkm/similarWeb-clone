@@ -1,0 +1,87 @@
+nav{
+    background: red;
+    width: 100vw;
+    height: 5rem;
+    position: sticky;
+    top: 0px;
+
+}
+
+.box1{
+    width: 15rem;
+    height: 17rem;
+    background: black;
+    top: 3rem;
+    left: 5rem;
+
+}
+.box2{
+    height: 3rem;
+    width: 4rem;
+    background: red;
+    position: absolute;
+    top: 12rem;
+}
+
+.box3{
+    height: 500px;
+    width: px;
+    background: green;
+    position: fixed;
+
+}
+.box4{
+    padding: 2rem 4rem;
+    background: teal;
+    transition: all 5s ease;
+
+}
+.box4:hover{
+    background: thistle;
+    margin-top: 12px;
+    color: aquamarine;
+}
+    
+.box5{
+    width: 14rem;
+    height: 2rem;
+    background: blue;
+    transition: all 2s ease;
+}
+
+.box5:hover{
+    /* transform: perspective(400p); */
+    /* transform: rotate(360deg); */
+    transform: translateY(-10px);
+}
+
+.chat{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+.my-chat{
+    color: white;
+}
+
+.hamburger{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    display: flex;
+    background-color: aqua;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+
+}
